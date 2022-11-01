@@ -4,43 +4,62 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>Домашня сторінка</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="./css/normalize.css" /> -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <style>
+      @font-face {
+        font-family: "Roboto", sans-serif;
+        font-display: swap;
+        src: url("../fonts/Roboto-Italic.ttf") format("ttf");
+        font-weight: 400;
+        font-style: italic;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <a href="#">
+    <header class="header">
+      <a href="#" class="header-logo">
         <img src="./images/logo.svg" alt="Logo" width="69" height="54" />
       </a>
-      <nav>
+      <nav class="navigation">
         <ul>
           <li>
-            <a href="./portfolio.html">About</a>
+            <a class="link header-link" href="./portfolio.html">About</a>
           </li>
           <li>
-            <a href="#">Services and prices</a>
+            <a class="link header-link" href="#">Services and prices <span lang="uk">собака</span></a>
           </li>
           <li>
-            <a href="#barbers">Barbers</a>
+            <a class="link header-link" href="#barbers">Barbers</a>
           </li>
           <li>
-            <a href="#">Contacts</a>
+            <a class="link header-link" href="#">Contacts</a>
+            <!-- <ul>
+              <li>TEST</li>
+            </ul> -->
           </li>
         </ul>
       </nav>
-      <a href="tel:+380441111111">+38 044 111 11 11</a>
+      
+      <a class="link header-contact" href="tel:+380441111111">+38 044 111 11 11</a>
 
       <!-- <a href="http://" target="_blank" rel="noopener noreferrer">Нова вкладка</a> -->
 
-      <button type="button">Online-booking</button>
+      <button class="header-btn" type="button">Online-booking</button>
     </header>
-    <main>
-      <section>
-        <p>A hair salon for men in Kyiv</p>
-        <h1>BarberShop</h1>
-        <p>We are experts in trendy men’s haircuts. We work quickly, carefully and with style.</p>
+    <main class="main">
+      <section class="hero">
+        <p class="uptitle">A hair salon for men in Kyiv</p>
+        <h1 class="hero-title">BarberShop</h1>
+        <p class="hero-desc">We are experts in trendy men’s haircuts. We work quickly, carefully and with style.</p>
       </section>
       <!--  -->
-      <section>
+      <section class="about">
         <ul>
           <li>
             <img src="./images/about-1.jpg" alt="work example" width="270" height="445" />
@@ -49,13 +68,13 @@
             <img src="./images/about-2.jpg" alt="work example" width="270" height="445" />
           </li>
         </ul>
-        <p>About</p>
-        <h2>
+        <p class="uptitle">About</p>
+        <h2 class="section-title">
           Best Barbershop in<br />
           your city
         </h2>
-        <p>If you want to add more confidence to your image, you should definitely visit us.</p>
-        <p>
+        <p class="about-subtitle">If you want to add more confidence to your image, you should definitely visit us.</p>
+        <p class="about-desc">
           We are a team that never stops at what has been achieved and are thirsty for changes. And when you fall into the hands of our master, you will never be the same again. We are a team that is always "on the same wave" with clients. Therefore, we are always ready to improve everyone who comes
           to us!
         </p>
@@ -276,16 +295,16 @@
         <p>Звичайний <br> параграф</p>
         <span style="background-color:blue;">Строк елемент3333</span> -->
     </main>
-    <footer>
-        <p>&copy; Copyright 2020</p>
-        <ul>
-            <li>
-                <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
-            </li>
-            <li>
-                <a href="#" target="_blank" rel="noopener noreferrer">Youtube</a>
-            </li>
-        </ul>
+    <footer class="footer">
+      <p>&copy; Copyright 2020</p>
+      <ul>
+        <li>
+          <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </li>
+        <li>
+          <a href="#" target="_blank" rel="noopener noreferrer">Youtube</a>
+        </li>
+      </ul>
     </footer>
   </body>
 </html>

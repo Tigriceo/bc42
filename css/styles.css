@@ -1,0 +1,165 @@
+:root {
+  --fmOs: "Open Sans", sans-serif;
+  --fmRl: "Raleway", sans-serif;
+
+  /* змінні на кольори */
+  --c-red: red;
+  --c-lgray: #9da4bd;
+  --с-gray: #555555;
+  --c-dark: #303030;
+
+  /* змінні на загальні елементи */
+  --bg-red: red;
+}
+/* @font-face {
+  font-family: 'Roboto', sans-serif;
+  font-display: swap;
+  src:  url('../fonts/Roboto-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  font-display: swap;
+  src:  url('../fonts/Roboto-Italic.ttf') format('ttf');
+  font-weight: 400;
+  font-style: italic;
+} */
+
+/* тег */
+
+body {
+  font-family: var(--fmOs);
+  /* font-family: "Raleway", sans-serif; */
+}
+
+/* a {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  woff woff2
+} */
+ul {
+  list-style: none;
+}
+/*  клас */
+.header {
+  background-color: blueviolet;
+}
+.link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3333;
+  letter-spacing: 0.1em;
+  color: #fff;
+  text-decoration: none;
+}
+.uptitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636;
+  color: rgba(157, 164, 189, 0.6);
+  text-transform: uppercase;
+}
+.section-title {
+  font-family: var(--fmRl);
+  font-size: 42px;
+  line-height: 1.1666;
+  color: var(--c-dark);
+  letter-spacing: 0.05em;
+}
+
+/*  */
+.header-link:hover,
+.header-link:focus {
+  color: #ff6c00;
+}
+/* .header-link:focus {
+  color: #ff6c00;
+} */
+.header-contact {
+  text-transform: uppercase;
+}
+.header-btn {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3333;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: transparent;
+}
+.f-letter {
+  font-size: 16px;
+  color: #fff;
+}
+.f-letter::first-letter {
+  font-size: 30px;
+}
+/* .header {
+} */
+.header-logo {
+  display: block;
+}
+/* .navigation {
+  background-color: cadetblue;
+} */
+/* ID */
+
+/* #navigation{
+    background-color: bisque;
+} */
+
+/* .navigation>ul{
+    list-style: none;
+} */
+/* .navigation-red {
+  background-color: red;
+} */
+/* шукаємо нащадка */
+.navigation .navigation-red {
+  background-color: blue;
+}
+
+/* модифікуємо батька */
+.navigation.navigation-red {
+  background-color: blueviolet;
+}
+/*  */
+.bg-red {
+  background-color: red;
+}
+.bg-blue {
+  background-color: blue;
+}
+
+/* hero */
+.hero {
+  background-color: blueviolet;
+}
+.hero-title {
+  font-family: var(--fmRl);
+  font-size: 72px;
+  line-height: 1.18;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+}
+.hero-desc {
+  color: var(--с-gray);
+}
+
+/* about */
+.about-subtitle {
+  font-size: 18px;
+  line-height: 1.6666;
+  letter-spacing: 0.02em;
+  color: var(--с-gray);
+}
+.about-desc {
+  font-size: 14px;
+  line-height: 1.8571;
+  letter-spacing: 0.02em;
+  color: var(--с-gray);
+}
