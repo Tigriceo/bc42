@@ -2,14 +2,18 @@
   --fmOs: "Open Sans", sans-serif;
   --fmRl: "Raleway", sans-serif;
 
+  /* змінні шрифтів */
+  --fs-42: 42px;
   /* змінні на кольори */
   --c-red: red;
   --c-lgray: #9da4bd;
   --с-gray: #555555;
   --c-dark: #303030;
-
+  --c-orange: #ff6c00;
+  --c-white: #fff;
   /* змінні на загальні елементи */
   --bg-red: red;
+  --bg-white: #fff;
 }
 /* @font-face {
   font-family: 'Roboto', sans-serif;
@@ -33,6 +37,26 @@ body {
   font-family: var(--fmOs);
   /* font-family: "Raleway", sans-serif; */
 }
+.container {
+  background-color: #000000;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+button {
+  cursor: pointer;
+}
 
 /* a {
   font-weight: 600;
@@ -53,28 +77,63 @@ ul {
   font-size: 12px;
   line-height: 1.3333;
   letter-spacing: 0.1em;
-  color: #fff;
+  color: var(--c-white);
   text-decoration: none;
+}
+.social-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636;
+  letter-spacing: 0.2em;
+  color: var(--c-dark);
+  text-decoration: none;
+}
+.social-link:hover,
+.social-link:focus {
+  color: var(--c-orange);
 }
 .uptitle {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.3636;
-  color: rgba(157, 164, 189, 0.6);
+  color: var(--c-dark);
   text-transform: uppercase;
+}
+.uptitle-white {
+  color: rgba(157, 164, 189, 0.6);
 }
 .section-title {
   font-family: var(--fmRl);
-  font-size: 42px;
+  font-size: var(--fs-42, 42px);
   line-height: 1.1666;
   color: var(--c-dark);
   letter-spacing: 0.05em;
 }
 
 /*  */
+.header-block {
+  display: flex;
+  align-items: center;
+}
+.header-logo {
+  margin-right: 131px;
+}
 .header-link:hover,
 .header-link:focus {
-  color: #ff6c00;
+  color: var(--c-orange);
+}
+.navigation-list {
+  display: flex;
+}
+.navigation-item:not(:last-child) {
+  margin-right: 30px;
+}
+.header-link {
+  display: block;
+  padding: 52px 0;
+}
+.header-btns {
+  margin-left: auto;
 }
 /* .header-link:focus {
   color: #ff6c00;
@@ -83,21 +142,25 @@ ul {
   text-transform: uppercase;
 }
 .header-btn {
+  margin-left: 40px;
+  padding: 11px 19px;
   font-weight: 600;
   font-size: 12px;
   line-height: 1.3333;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--c-white);
   background-color: transparent;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
 }
-.f-letter {
+/* .f-letter {
   font-size: 16px;
   color: #fff;
 }
 .f-letter::first-letter {
   font-size: 30px;
-}
+} */
 /* .header {
 } */
 .header-logo {
@@ -137,9 +200,21 @@ ul {
 
 /* hero */
 .hero {
+  padding: 272px 0 40px;
   background-color: blueviolet;
 }
+.hero-block {
+  display: flex;
+}
+.hero-socials {
+  padding: 27px 0 58px 40px;
+  background: var(--c-white);
+}
+/* .hero-uptitle {
+  color: rgba(157, 164, 189, 0.6);
+} */
 .hero-title {
+  margin: 20px 0;
   font-family: var(--fmRl);
   font-size: 72px;
   line-height: 1.18;
@@ -147,7 +222,24 @@ ul {
   letter-spacing: 0.05em;
 }
 .hero-desc {
+  font-size: 18px;
+  line-height: 1.6666;
+  letter-spacing: 0.02em;
   color: var(--с-gray);
+}
+.hero-content__btns {
+  margin-top: 144px;
+}
+.hero-btn {
+  min-width: 60px;
+  padding: 0 0 8px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636;
+  letter-spacing: 0.1em;
+  color: rgba(157, 164, 189, 0.6);
+  background: transparent;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.6);
 }
 
 /* about */
@@ -162,4 +254,100 @@ ul {
   line-height: 1.8571;
   letter-spacing: 0.02em;
   color: var(--с-gray);
+}
+
+/* тестова сторінка */
+.test {
+  width: 200px;
+  height: 200px;
+
+  padding: 10px;
+  padding: 20px 0;
+  padding: 20px 0 50px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  /*  */
+  /* margin: 10px;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px; */
+  margin: 20px 0;
+  margin: 20px 0 50px;
+
+  border: 10px solid red;
+  background: aqua;
+}
+.text p {
+  background-color: #ff6c00;
+  margin: 20px 0;
+}
+.text p:first-child {
+  margin-top: 0;
+}
+.text p:nth-child(4) {
+  font-size: 18px;
+  color: #fff;
+}
+.text p:nth-last-child(2) {
+  background-color: red;
+}
+
+.text h3 {
+  background-color: #555555;
+  margin: 30px 0;
+}
+.text h3:last-child {
+  margin-bottom: 0;
+}
+.table {
+  margin: 50px;
+  background: aqua;
+  width: 100%;
+}
+
+.table-body tr:nth-child(odd) {
+  background-color: #ff6c00;
+}
+.table-body tr:nth-child(even) {
+  background-color: #303030;
+}
+.block {
+  display: flex;
+  margin: 50px auto;
+  background: #ff6c00;
+  height: 200px;
+}
+.block-test {
+  width: 200px;
+  height: 50px;
+}
+.block-span {
+  background-color: yellowgreen;
+  padding: 20px;
+}
+.block-1 {
+  background-color: #9da4bd;
+}
+.block-2 {
+  background-color: blueviolet;
+}
+.block-3 {
+  background-color: blue;
+}
+/* .block-test{
+  margin-right: 50px;
+}
+.block-test:last-child{
+  margin-right: 0;
+} */
+.block-test:nth-child(3n) {
+  margin-right: 50px;
+}
+.block-test:not(:last-child) {
+  margin-right: 50px;
 }
