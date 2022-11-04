@@ -14,6 +14,7 @@
   /* змінні на загальні елементи */
   --bg-red: red;
   --bg-white: #fff;
+  --bg-lgray: #f7f7f7;
   /* змінні контейнеру */
   --coontainer-padding: 15px;
 }
@@ -49,6 +50,12 @@ body {
 }
 button {
   cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .btn {
@@ -100,6 +107,7 @@ ul {
   color: var(--c-orange);
 }
 .uptitle {
+  margin-bottom: 20px;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.3636;
@@ -197,9 +205,6 @@ ul {
 }
 
 /* hero */
-.hero {
-  background-color: blueviolet;
-}
 .hero-block {
   display: flex;
 }
@@ -212,7 +217,13 @@ ul {
 } */
 .hero-content {
   width: calc(100% - 114px);
-  padding: 272px 0 40px 100px;
+  padding: 272px 20px 40px 100px;
+  background-image: url(../images/slider.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-repeat: repeat-x; */
+  /* background-repeat: repeat-y; */
+  /* background-position: 5% 5%; */
 }
 .hero-title {
   margin: 20px 0;
@@ -228,9 +239,17 @@ ul {
   letter-spacing: 0.02em;
   color: var(--с-gray);
 }
+
+/* .header-contact::before{
+  content: url(../images/envelope.svg);
+}
+.header-contact::after{
+  content: url(../images/envelope.svg);
+} */
 .hero-btn {
+  position: relative;
   min-width: 60px;
-  padding: 0 0 8px;
+  /* padding: 0 0 8px; */
   font-weight: 600;
   font-size: 11px;
   line-height: 1.3636;
@@ -238,7 +257,15 @@ ul {
   color: rgba(157, 164, 189, 0.6);
   background: transparent;
   border: none;
-  border-bottom: 1px solid rgba(157, 164, 189, 0.6);
+  /* border-bottom: 1px solid rgba(157, 164, 189, 0.6); */
+}
+.hero-btn:after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  margin-top: 8px;
+  background: rgba(157, 164, 189, 0.6);
 }
 .hero-content__btns {
   display: flex;
@@ -290,6 +317,69 @@ ul {
   line-height: 1.8571;
   letter-spacing: 0.02em;
   color: var(--с-gray);
+}
+
+/* барберы */
+.barbers {
+  background-color: var(--bg-lgray);
+}
+.barbers-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 44px;
+}
+.barbers-item {
+  flex-basis: 33.333%;
+  text-align: center;
+}
+.barbers-desc {
+  padding: 30px 10px 0;
+}
+.barbers-item-title {
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 1.3838;
+  letter-spacing: 0.02em;
+  color: var(--c-dark);
+}
+.barbers-item-desc {
+  font-size: 14px;
+  line-height: 1.3571;
+  letter-spacing: 0.02em;
+  color: var(--c-orange);
+}
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+}
+.social-item-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--bg-white);
+  color: inherit;
+  text-decoration: none;
+  color: var(--c-orange);
+}
+/* .icon-test{
+  fill: var(--c-orange);
+}
+.icon-test:hover{
+  fill: red;
+} */
+/* .icon{
+  fill: currentColor;
+} */
+.social-item-link:hover,
+.social-item-link:focus {
+  fill: var(--c-orange);
 }
 
 /* тестова сторінка */
@@ -387,3 +477,17 @@ ul {
 .block-test:not(:last-child) {
   margin-right: 50px;
 } */
+
+.test-image {
+  width: 600px;
+  height: 400px;
+
+  /* для html */
+  object-fit: cover;
+  object-position: center;
+
+  /* для css */
+  /* background-size: cover; */
+  /* background-position: center; */
+  /* background-image: url(../image/slider.svg);*/
+}
