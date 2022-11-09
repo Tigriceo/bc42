@@ -8,6 +8,7 @@
   --c-red: red;
   --c-lgray: #9da4bd;
   --с-gray: #555555;
+  --c-grayl: #757575;
   --c-dark: #303030;
   --c-orange: #ff6c00;
   --c-white: #fff;
@@ -15,6 +16,7 @@
   --bg-red: red;
   --bg-white: #fff;
   --bg-lgray: #f7f7f7;
+  --bg-blue: #2196f3;
   /* змінні контейнеру */
   --coontainer-padding: 15px;
 }
@@ -202,7 +204,7 @@ ul {
 }
 
 .modal-wrap {
-  display: none;
+  /* display: none; */
   position: fixed;
   z-index: 999;
   left: 0;
@@ -257,6 +259,76 @@ ul {
 .close-modal:focus::after,
 .close-modal:focus::before {
   transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.form-row:not(:last-child) {
+  margin-bottom: 10px;
+}
+.form-row {
+  position: relative;
+  font-size: 12px;
+  line-height: 1.1666;
+  letter-spacing: 0.01em;
+}
+.form-row-title {
+  display: block;
+  margin-bottom: 4px;
+
+  color: var(--c-grayl);
+}
+.form-row-input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 10px 10px 10px 42px;
+  outline: none;
+}
+.form-row-input::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+.form-row-input:focus {
+  border: 1px solid #2196f3;
+}
+.form-row-input:focus + svg {
+  fill: #2196f3;
+}
+.form-row svg {
+  position: absolute;
+  top: 27px;
+  left: 12px;
+  transition: fill 0.3s ease-in-out;
+}
+.privacy label {
+  position: relative;
+}
+.privacy input {
+  display: none;
+}
+.privacy {
+  font-size: 14px;
+  line-height: 1.7142;
+  letter-spacing: 0.03em;
+  color: var(--c-grayl);
+}
+.privacy label::before {
+  /* position: absolute; */
+  cursor: pointer;
+  display: inline-block;
+  content: "";
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  border: 1px solid var(--c-grayl);
+  border-radius: 2px;
+}
+.privacy input:checked + label::before {
+  background-color: var(--bg-blue);
+  background-image: url(../images/Vector.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid var(--bg-blue);
 }
 /* .navigation {
   background-color: cadetblue;
@@ -592,3 +664,29 @@ ul {
   /* background-position: center; */
   /* background-image: url(../image/slider.svg);*/
 }
+/* .form {
+  padding: 50px 20px;
+  border: 2px solid #000;
+  max-width: 400px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+textarea {
+  height: 120px;
+  resize: none;
+}
+
+.checkboxesm {
+  margin-bottom: 20px;
+}
+select {
+  margin: 20px 0;
+} */

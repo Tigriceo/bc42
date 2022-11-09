@@ -13,16 +13,70 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-
-
     <div class="container">
-      <div class="block">
-        <div class="block-test block-1">
-          Lorem ipsum dolor
+      <form action="#" class="form" autocomplete="on">
+        <label for="user_name">User name</label>
+        <input type="text" name="user_name" id="user_name" value="test" placeholder="Name" required minlength="3" maxlength="20" />
+
+        <label for="user_surname">User surname</label>
+        <input type="text" name="user_surname" id="user_surname" placeholder="Surname" />
+
+        <label for="user_mail">User email</label>
+        <input type="email" name="user_mail" id="user_mail" placeholder="@email" required />
+
+        <textarea name="user_text" id="user_text" cols="10" rows="5"></textarea>
+
+        <div class="checkboxes" role="group">
+          Оберіть додатки: <br />
+          <label for="user_support">базова підтримка</label>
+          <input type="checkbox" name="user_support" required checked />
+
+          <br />
+          <label for="user_support1">додаткові можливості</label>
+          <input type="checkbox" name="user_support1" disabled />
         </div>
-        <div class="block-test block-2"></div>
-        <div class="block-test block-3"></div>
-      </div>
+
+        <fieldset class="checkboxes">
+          Отримувати лист <br />
+          <label for="user_support">до 18</label>
+          <input type="radio" name="email_send" id="" checked />
+
+          <label for="user_support">18-30</label>
+          <input type="radio" name="email_send" id="" />
+
+          <label for="user_support">30+</label>
+          <input type="radio" name="email_send" id="" disabled />
+        </fieldset>
+
+        <select name="user_auto" id="">
+          <optgroup label="Німецькі авто">
+            <option value="audi">Audi</option>
+            <option value="bmw" selected>BMW</option>
+          </optgroup>
+          <optgroup label="В.Авто">
+            <option value="auto_2101">2101</option>
+            <option value="tavria">таврія</option>
+          </optgroup>
+        </select>
+
+        <br />
+
+        <label for="auto"></label>
+        <input id="auto" list="auto" name="auto">
+        <datalist id="auto">
+          <option value="audi">Audi</option>
+          <option value="bmw" selected>BMW</option>
+          <option value="audi1">Audi</option>
+          <option value="bmw1" selected>BMW</option>
+          <option value="audi2">Audi</option>
+          <option value="bmw3" selected>BMW</option>
+        </datalist>
+
+        <br />
+
+        <button type="submit">Відправити</button>
+        <button type="reset">Скинути</button>
+      </form>
     </div>
 
     <!-- <div class="test"></div>
