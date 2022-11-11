@@ -1,0 +1,30 @@
+:root {
+  --fmOs: "Open Sans", sans-serif;
+  --fmRl: "Raleway", sans-serif;
+
+  /* змінні шрифтів */
+  --fs-42: 42px;
+  /* змінні на кольори */
+  --c-red: red;
+  --c-lgray: #9da4bd;
+  --с-gray: #555555;
+  --c-grayl: #757575;
+  --c-dark: #303030;
+  --c-orange: #ff6c00;
+  --c-white: #fff;
+  --с-lblue: #9da4bd;
+  /* змінні на загальні елементи */
+  --bg-red: red;
+  --bg-white: #fff;
+  --bg-lgray: #f7f7f7;
+  --bg-blue: #2196f3;
+  --bg-dark: #303030;
+  --bg-blue-dark: #191c26;
+  /* змінні контейнеру */
+  --coontainer-padding: 15px;
+
+  /* анімації */
+  --time-tr: 250ms;
+  --t-func: cubic-bezier(0.4, 0, 0.2, 1);
+  --anim-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -1,0 +1,56 @@
+/* about */
+@mixin d-f($color) {
+  border-top: 1px solid $color;
+  border-bottom: 1px solid $color;
+}
+
+.about {
+  &--uptitle {
+    color: orange;
+    &::before {
+      background-color: aqua;
+    }
+  }
+
+  &-block {
+    display: flex;
+    position: relative;
+    gap: 30px;
+    @include bordered(#000);
+    // border-top: 1px solid #000;
+    // border-bottom: 1px solid #000;
+  }
+  &-works {
+    display: flex;
+    gap: 30px;
+  }
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 470px;
+  }
+  &-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &-subtitle {
+    font-size: 18px;
+    line-height: 1.6666;
+    letter-spacing: 0.02em;
+    color: var(--с-gray);
+  }
+  &-desc {
+    position: relative;
+    font-size: 14px;
+    line-height: 1.8571;
+    letter-spacing: 0.02em;
+    color: var(--с-gray);
+    &::after {
+    }
+  }
+}
+
+.about-desc::after {
+}

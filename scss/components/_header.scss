@@ -1,0 +1,19 @@
+.header {
+  /* background-color: blueviolet; */
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+
+  &-logo{
+    margin-right: 131px;
+  }
+}
+// .header-logo {
+//   margin-right: 131px;
+// }
+
+// .header-logo span {
+//   color: #ffdfdd;
+// }

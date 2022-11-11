@@ -11,6 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- <link rel="stylesheet" href="./css/main.min.css" /> -->
     <!-- <style>
       @font-face {
         font-family: "Roboto", sans-serif;
@@ -24,8 +27,9 @@
   <body>
     <header class="header">
       <div class="container header-block">
-        <a href="#" class="header-logo">
-          <img src="./images/logo.svg" alt="Logo" width="69" height="54" />
+        <a href="#" class="logo header-logo">
+          <!-- <img src="./images/logo.svg" alt="Logo" width="69" height="54" /> -->
+          <span>Web</span>Studio
         </a>
         <nav class="navigation">
           <ul class="navigation-list">
@@ -84,8 +88,8 @@
             </li>
           </ul>
           <div class="about-content">
-            <div class="about-content-text">
-              <p class="uptitle">About</p>
+            <div class="about-text">
+              <p class="uptitle about--uptite">About</p>
               <h2 class="section-title">
                 Best Barbershop in<br />
                 your city
@@ -323,24 +327,72 @@
         </ul>
       </section>
       <!--  -->
-      <section>
-        <h2>Contacts</h2>
-        <address>
-          <ul>
-            <li>
-              <a href="https://goo.gl/maps/ndzHv4viXPYgsNQJ9" target="_blank" rel="noopener noreferrer">st. Vasilkovaya, 7A Kiev, 08132</a>
-            </li>
-            <li>
-              <a href="tel:+380441111111">+38 044 111 11 11</a>
-            </li>
-            <li>
-              <a href="mailto:barbershop@email.com">barbershop@email.com</a>
-            </li>
-          </ul>
-        </address>
-        <p>Working hours</p>
-        <p>Every day from 9:00 to 22:00</p>
-        <!-- <p>Every day from <time datetime="2022-12-14 20:00">Valentines day</time>.</p> -->
+      <section class="contacts">
+        <div class="container contacts-block">
+          <div class="contacts-form-wrap">
+            <h2 class="section-title">Online-booking</h2>
+            <form action="#" class="contacts-form">
+              <div class="contacts-form-row" role="group">
+                <input class="contacts-input" type="text" name="user_name" id="user_name" placeholder="Name*" />
+                <input class="contacts-input" type="tel" name="user_tel" id="user_tel" placeholder="Phone*" />
+              </div>
+
+              <textarea class="contacts-input" name="user_desc" id="user_desc" cols="30" rows="10" placeholder="Message"></textarea>
+
+              <button class="btn" type="submit">send</button>
+
+              <!-- 
+              <div>
+                <label for="che1"></label>
+                <input type="checkbox" name="1" id="che1">
+
+
+                <input type="checkbox" name="2" id="">
+                <input type="checkbox" name="3" id="">
+              </div>
+
+              <div>
+                <input type="radio" name="test" id="">
+                <input type="radio" name="test" id="">
+                <input type="radio" name="test" id="">
+                <input type="radio" name="test" id="">
+              </div> -->
+            </form>
+          </div>
+          <div class="contacts-items">
+            <h2 class="section-title">Contacts</h2>
+            <address class="contacts-address">
+              <ul class="contacts-list">
+                <li class="contacts-list-item">
+                  <a class="contacts-list-link" href="https://goo.gl/maps/ndzHv4viXPYgsNQJ9" target="_blank" rel="noopener noreferrer">
+                    <svg class="icon" width="24" height="24">
+                      <use xlink:href="./images/sprite.svg#icon-map"></use>
+                    </svg>
+                    st. Vasilkovaya, 7A Kiev, 08132
+                  </a>
+                </li>
+                <li class="contacts-list-item">
+                  <a class="contacts-list-link" href="tel:+380441111111">
+                    <svg class="icon" width="24" height="24">
+                      <use xlink:href="./images/sprite.svg#icon-phone"></use>
+                    </svg>
+                    +38 044 111 11 11
+                  </a>
+                </li>
+                <li class="contacts-list-item">
+                  <a class="contacts-list-link" href="mailto:barbershop@email.com">
+                    <svg class="icon" width="24" height="24">
+                      <use xlink:href="./images/sprite.svg#icon-mail"></use>
+                    </svg>
+                    barbershop@email.com
+                  </a>
+                </li>
+              </ul>
+            </address>
+            <p class="uptitle">Working hours</p>
+            <p class="contacts-desc">Every day from 9:00 to 22:00</p>
+          </div>
+        </div>
       </section>
 
       <!-- <h1 style="background-color: red;">Заголовок</h1>
@@ -353,7 +405,6 @@
         <div class="modal">
           <button type="button" class="close-modal"></button>
           <form action="#" class="modal-form">
-
             <div class="form-row">
               <label for="user_name" class="form-row-title">Ім'я</label>
               <input type="text" class="form-row-input" name="user_name" id="user_name" placeholder="Ім'я" />
@@ -363,10 +414,9 @@
             </div>
 
             <div class="privacy">
-              <input type="checkbox" name="mail_send" id="mail_send">
+              <input type="checkbox" name="mail_send" id="mail_send" />
               <label for="mail_send">Погоджуюся з розсилкою та приймаю</label>
               <a href="#" target="_blank" rel="noopener noreferrer">Умови договору</a>
-              
             </div>
 
             <!-- <label for="user_phone">Телефон</label>
