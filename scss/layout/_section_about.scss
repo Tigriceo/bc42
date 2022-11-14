@@ -1,22 +1,10 @@
 /* about */
-@mixin d-f($color) {
-  border-top: 1px solid $color;
-  border-bottom: 1px solid $color;
-}
 
 .about {
-  &--uptitle {
-    color: orange;
-    &::before {
-      background-color: aqua;
-    }
-  }
-
   &-block {
     display: flex;
     position: relative;
     gap: 30px;
-    @include bordered(#000);
     // border-top: 1px solid #000;
     // border-bottom: 1px solid #000;
   }
@@ -47,10 +35,5 @@
     line-height: 1.8571;
     letter-spacing: 0.02em;
     color: var(--с-gray);
-    &::after {
-    }
   }
-}
-
-.about-desc::after {
 }

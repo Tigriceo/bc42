@@ -5,15 +5,22 @@
   left: 0;
   top: 0;
   z-index: 100;
+  // @include flexed(center, center);
 
-  &-logo{
+  &-logo {
     margin-right: 131px;
   }
-}
-// .header-logo {
-//   margin-right: 131px;
-// }
+  
 
-// .header-logo span {
-//   color: #ffdfdd;
-// }
+  &__link{
+    &.current{
+      color: blue;
+    }
+  }
+
+
+  &-btn{
+    color: var(--c-white);
+  }
+}
+

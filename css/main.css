@@ -291,6 +291,109 @@ summary {
   padding: 0 var(--coontainer-padding);
 }
 
+body {
+  font-family: var(--fmOs);
+  /* font-family: "Raleway", sans-serif; */
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+.section {
+  padding: 120px 0;
+}
+.section-title {
+  font-family: var(--fmRl);
+  font-size: var(--fs-42, 42px);
+  line-height: 1.1666;
+  color: var(--c-dark);
+  letter-spacing: 0.05em;
+}
+
+.uptitle {
+  position: relative;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636;
+  color: var(--c-dark);
+  text-transform: uppercase;
+}
+.uptitle::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background: var(--bg-dark);
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+.uptitle--white {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 160px;
+  padding: 11px 19px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3333;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--c-dark);
+  background-color: transparent;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  -webkit-transition: color var(--anim-func), background-color var(--anim-func);
+  transition: color var(--anim-func), background-color var(--anim-func);
+}
+.btn:hover, .btn:focus {
+  color: var(--c-white);
+  background-color: var(--c-orange);
+}
+
+.link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3333;
+  letter-spacing: 0.1em;
+  color: var(--c-white);
+  text-decoration: none;
+  -webkit-transition: color var(--time-tr) var(--t-func);
+  transition: color var(--time-tr) var(--t-func);
+}
+.link:hover, .link:focus {
+  color: var(--c-orange);
+}
+
+.social-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636;
+  letter-spacing: 0.2em;
+  color: var(--c-dark);
+  text-decoration: none;
+  -webkit-transition: color var(--time-tr) var(--t-func);
+  transition: color var(--time-tr) var(--t-func);
+}
+.social-link:hover, .social-link:focus {
+  color: var(--c-orange);
+}
+
 .header {
   /* background-color: blueviolet; */
   position: absolute;
@@ -301,6 +404,12 @@ summary {
 }
 .header-logo {
   margin-right: 131px;
+}
+.header__link.current {
+  color: blue;
+}
+.header-btn {
+  color: var(--c-white);
 }
 
 .logo {
@@ -315,19 +424,12 @@ summary {
 }
 
 /* about */
-.about--uptitle {
-  color: orange;
-}
-.about--uptitle::before {
-  background-color: aqua;
-}
 .about-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   gap: 30px;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
 }
 .about-works {
   display: -webkit-box;
