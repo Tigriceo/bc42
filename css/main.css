@@ -12,6 +12,8 @@ Use a better box model (opinionated).
 ::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 /**
@@ -290,10 +292,19 @@ summary {
   margin: 0 auto;
   padding: 0 var(--coontainer-padding);
 }
+@media screen and (max-width: 768px) {
+  .container--mobile {
+    max-width: 450px;
+  }
+}
 
 body {
   font-family: var(--fmOs);
   /* font-family: "Raleway", sans-serif; */
+}
+
+.hide {
+  display: none;
 }
 
 button {
@@ -472,4 +483,75 @@ ul {
   line-height: 1.8571;
   letter-spacing: 0.02em;
   color: var(--с-gray);
+}
+
+.barbers {
+  background-color: var(--bg-lgray);
+}
+.barbers__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 44px;
+}
+@media screen and (max-width: 768px) {
+  .barbers__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.barbers__item {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .barbers__item {
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .barbers__item {
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
+  }
+}
+.barbers__item img {
+  margin: 0 auto;
+}
+.barbers__title {
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 1.3838;
+  letter-spacing: 0.02em;
+  color: var(--c-dark);
+}
+.barbers__desc {
+  font-size: 14px;
+  line-height: 1.3571;
+  letter-spacing: 0.02em;
+  color: var(--c-orange);
+}
+
+.barbers-desc {
+  padding: 30px 10px 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .section-test {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section-test {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */

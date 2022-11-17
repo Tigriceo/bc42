@@ -1,0 +1,114 @@
+body {
+  background-color: aqua;
+}
+// media-type:
+// all
+// print
+// screen
+
+// @media media-type and (media-feature) {
+//   /*
+//   * Набір CSS-правил, які потрібно застосувати до документа,
+//   * якщо дотримуються умови перевірки медіатипу і виразу
+//   */
+// }
+// // для пристороїв які мають монітор
+// @media screen and (media-feature) {
+//   /*
+//   * Набір CSS-правил, які потрібно застосувати до документа,
+//   * якщо дотримуються умови перевірки медіатипу і виразу
+//   */
+// }
+
+// // для друку
+// @media screen and (media-feature) {
+//   /*
+//   * Набір CSS-правил, які потрібно застосувати до документа,
+//   * якщо дотримуються умови перевірки медіатипу і виразу
+//   */
+// }
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+// max-width
+@media screen and (max-width: 480px) {
+  // 0 - 480
+  body {
+    background-color: blueviolet;
+  }
+
+  .card {
+    flex-direction: column;
+  }
+}
+
+// min-width
+@media screen and (min-width: 480px) {
+  // 480 - ~
+  body {
+    background-color: chocolate;
+  }
+}
+
+// and
+// not
+// or
+
+@media not screen {
+  .anim,
+  .btn,
+  .div {
+    display: none;
+  }
+}
+
+// "від" і "до"
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  // 480 - 768
+  body {
+    background-color: red;
+  }
+
+  // картка
+  .card {
+    flex-basis: calc(50% - 15px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card {
+    //flex-basis: calc(25% - 15px);
+  }
+}
+// body {
+//   touch-action: pan-x pan-y;
+// }
+// @media screen and (max-width: 1200px) {
+//   .container {
+//     width: 768px;
+//   }
+// }
+// @media screen and (max-width: 768px) {
+//   .container {
+//     width: 480px;
+//   }
+// }
+// @media screen and (max-width: 480px) {
+//   .container {
+//     width: 390px;
+//   }
+// }
+//
+// @media (max-width: 600px), (min-width: 900px) {
+//   body {
+//     background-color: orange;
+//   }
+// }
+
+// @media not screen and (max-width:480px) {
+//     .div{
+//         display: none;
+//     }
+// }

@@ -12,10 +12,9 @@
     <link rel="stylesheet" href="./css/styles.css" />
 
     <link rel="stylesheet" href="./css/main.css" />
-
   </head>
   <body>
-    <header class="header">
+    <header class="header hide">
       <div class="container header-block">
         <a href="#" class="logo header-logo">
           <img src="./images/logo.svg" alt="Logo" width="69" height="54" />
@@ -44,7 +43,7 @@
       </div>
     </header>
     <main class="main">
-      <section class="hero">
+      <section class="hero hide">
         <div class="container hero-block">
           <ul class="hero-socials">
             <li>
@@ -66,7 +65,7 @@
         </div>
       </section>
       <!--  -->
-      <section class="section about">
+      <section class="section about hide">
         <div class="container about-block">
           <ul class="about-works">
             <li>
@@ -94,7 +93,7 @@
         </div>
       </section>
       <!--  -->
-      <section>
+      <section class="hide">
         <p>Spend your time with the best masters</p>
         <h2>Services and <span style="color: red">prices</span></h2>
         <!-- <table>
@@ -157,7 +156,7 @@
       </section>
       <!--  -->
 
-      <section>
+      <section class="hide">
         <ul>
           <li>
             <h3>600<sup>+</sup></h3>
@@ -182,15 +181,15 @@
       </section>
       <!--  -->
       <section class="section barbers">
-        <div class="container">
+        <div class="container container--mobile">
           <p class="uptitle">For true enjoyers of the atmosphere</p>
           <h2 class="section-title">Our barbers</h2>
-          <ul class="barbers-list">
-            <li class="barbers-item">
+          <ul class="barbers__list">
+            <li class="barbers__item">
               <img src="./images/barber1.jpg" alt="John Smith" width="370" height="346" />
               <div class="barbers-desc">
-                <h3 class="barbers-item-title">John Smith</h3>
-                <p class="barbers-item-desc">Extreme Barber</p>
+                <h3 class="barbers__title">John Smith</h3>
+                <p class="barbers__desc">Extreme Barber</p>
                 <ul class="socials">
                   <li class="socials-item">
                     <a href="#" class="social-item-link" target="_blank" rel="noopener noreferrer">
@@ -226,11 +225,11 @@
                 </ul>
               </div>
             </li>
-            <li class="barbers-item">
+            <li class="barbers__item">
               <img src="./images/barber2.jpg" alt="Michele Doe" width="370" height="346" />
               <div class="barbers-desc">
-                <h3 class="barbers-item-title">Michele Doe</h3>
-                <p class="barbers-item-desc">Extreme Barber</p>
+                <h3 class="barbers__title">Michele Doe</h3>
+                <p class="barbers__desc">Extreme Barber</p>
                 <ul class="socials">
                   <li class="socials-item">
                     <a href="#" class="social-item-link" target="_blank" rel="noopener noreferrer">
@@ -263,11 +262,48 @@
                 </ul>
               </div>
             </li>
-            <li class="barbers-item">
+            <li class="barbers__item">
               <img src="./images/barber3.jpg" alt="Alan Black" width="370" height="346" />
               <div class="barbers-desc">
-                <h3 class="barbers-item-title">Alan Black</h3>
-                <p class="barbers-item-desc">Extreme Barber</p>
+                <h3 class="barbers__title">Alan Black</h3>
+                <p class="barbers__desc">Extreme Barber</p>
+                <ul class="socials">
+                  <li class="socials-item">
+                    <a href="#" class="social-item-link" target="_blank" rel="noopener noreferrer">
+                      <svg class="icon" width="20" height="20">
+                        <use xlink:href="./images/sprite.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a href="#" class="social-item-link" target="_blank" rel="noopener noreferrer">
+                      <svg class="icon" width="20" height="20">
+                        <use xlink:href="./images/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a href="#" class="social-item-link" target="_blank" rel="noopener noreferrer">
+                      <svg class="icon" width="20" height="20">
+                        <use xlink:href="./images/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a href="#" class="social-item-link" target="_blank" rel="noopener noreferrer">
+                      <svg class="icon" width="20" height="20">
+                        <use xlink:href="./images/sprite.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="barbers__item">
+              <img src="./images/barber3.jpg" alt="Alan Black" width="370" height="346" />
+              <div class="barbers-desc">
+                <h3 class="barbers__title">Alan Black</h3>
+                <p class="barbers__desc">Extreme Barber</p>
                 <ul class="socials">
                   <li class="socials-item">
                     <a href="#" class="social-item-link" target="_blank" rel="noopener noreferrer">
@@ -305,7 +341,7 @@
       </section>
 
       <!--  -->
-      <section>
+      <section class="hide">
         <p>In Latin, "barba" means "beard"</p>
         <h2 hidden>Porfolio</h2>
         <ul>
@@ -316,7 +352,7 @@
         </ul>
       </section>
       <!--  -->
-      <section class="contacts">
+      <section class="contacts hide">
         <div class="container contacts-block">
           <div class="contacts-form-wrap">
             <h2 class="section-title">Online-booking</h2>
@@ -414,7 +450,7 @@
         </div>
       </div>
     </main>
-    <footer class="footer">
+    <footer class="footer hide">
       <p>&copy; Copyright 2020</p>
       <ul>
         <li>

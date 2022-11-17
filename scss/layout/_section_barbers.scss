@@ -1,0 +1,64 @@
+.barbers {
+  background-color: var(--bg-lgray);
+  &__list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 44px;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__item {
+    //flex-basis: calc((100% - 90px)/4);
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 60px) / 3);
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 90px) / 4);
+    }
+
+    // @media screen and (max-width: 480px) {
+    //   flex-basis: calc((100% - 90px) / 4);
+    // }
+
+    // @media screen and (max-width: 480px) {
+    //   flex-basis: calc((100% - 90px) / 4);
+    // }
+
+    img {
+      margin: 0 auto;
+    }
+  }
+  &__title {
+    margin-bottom: 8px;
+    font-size: 18px;
+    line-height: 1.3838;
+    letter-spacing: 0.02em;
+    color: var(--c-dark);
+  }
+  &__desc {
+    font-size: 14px;
+    line-height: 1.3571;
+    letter-spacing: 0.02em;
+    color: var(--c-orange);
+  }
+}
+
+.barbers-desc {
+  padding: 30px 10px 0;
+}
+
+.section-test {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.section-test {
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+}

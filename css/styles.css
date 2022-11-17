@@ -329,34 +329,7 @@
 
 
 /* барберы */
-.barbers {
-  background-color: var(--bg-lgray);
-}
-.barbers-list {
-  display: flex;
-  gap: 30px;
-  margin-top: 44px;
-}
-.barbers-item {
-  flex-basis: 33.333%;
-  text-align: center;
-}
-.barbers-desc {
-  padding: 30px 10px 0;
-}
-.barbers-item-title {
-  margin-bottom: 8px;
-  font-size: 18px;
-  line-height: 1.3838;
-  letter-spacing: 0.02em;
-  color: var(--c-dark);
-}
-.barbers-item-desc {
-  font-size: 14px;
-  line-height: 1.3571;
-  letter-spacing: 0.02em;
-  color: var(--c-orange);
-}
+
 .socials {
   display: flex;
   align-items: center;
