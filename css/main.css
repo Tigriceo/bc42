@@ -555,8 +555,8 @@ ul {
 }
 @media screen and (min-width: 1200px) {
   .barbers__item {
-    -ms-flex-preferred-size: calc((100% - 60px) / 3);
-        flex-basis: calc((100% - 60px) / 3);
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
   }
 }
 @media screen and (min-width: 480px) and (max-width: 1200px) {
@@ -612,4 +612,62 @@ ul {
   .container {
     max-width: 1200px;
   }
+}
+
+body {
+  font-size: 14px;
+}
+body.lock {
+  overflow: hidden;
+}
+
+.team {
+  padding: 80px 0;
+}
+.team__title {
+  text-align: center;
+}
+.team__slider {
+  padding: 40px 0 46px;
+}
+.team__item {
+  text-align: center;
+}
+.team__img {
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  width: 181px;
+  height: 181px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.team__name {
+  margin-bottom: 12px;
+  font-size: 18px;
+  line-height: 1.2222;
+}
+.team__position {
+  margin: 12px 0 40px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.7142;
+}
+.team__desc {
+  max-width: 886px;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  overflow: hidden;
+}
+.team__pagination.swiper-pagination {
+  bottom: 0;
+}
+.team__pagination .swiper-pagination-bullet {
+  background: #939eac;
+}
+.team__pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #06071b;
 }/*# sourceMappingURL=main.css.map */

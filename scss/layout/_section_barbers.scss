@@ -17,7 +17,7 @@
       flex-basis: calc((100% - 60px) / 2);
     }
     @media screen and (min-width: 1200px) {
-      flex-basis: calc((100% - 60px) / 3);
+      flex-basis: calc((100% - 90px) / 4);
     }
 
     @media screen and (min-width: 480px) and (max-width: 1200px) {
@@ -81,5 +81,14 @@
   }
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
+  }
+}
+
+
+body{
+  font-size: 14px;
+
+  &.lock{
+    overflow: hidden;
   }
 }
