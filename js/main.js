@@ -7,12 +7,12 @@
             heroMain.forEach(slider => {
                 let pagination = slider.querySelector('.swiper-pagination');
                 swiper = new Swiper(slider.querySelector('.swiper'), {
-                    speed: 900,
+                    speed: 1500,
                     centeredSlides: true,
-                    // autoplay: {
-                    //     delay: 3000,
-                    //     disableOnInteraction: false,
-                    // },
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    },
                     slidesPerView: 1,
                     spaceBetween: 20,
                     pagination: {
