@@ -1,0 +1,145 @@
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.social-item-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--bg-white);
+    color: inherit;
+    text-decoration: none;
+    color: var(--c-orange);
+}
+
+/* .icon-test{
+  fill: var(--c-orange);
+}
+.icon-test:hover{
+  fill: red;
+} */
+/* .icon{
+  fill: currentColor;
+} */
+.social-item-link:hover,
+.social-item-link:focus {
+    fill: var(--c-orange);
+}
+
+/* секція контакти */
+.contacts {
+    background: var(--bg-blue-dark);
+}
+
+.contacts-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts .section-title {
+    margin-bottom: 40px;
+    color: var(--c-white);
+}
+
+.contacts-form-wrap {
+    flex: 0 0 50%;
+    padding: 130px 20px 120px 0;
+}
+
+.contacts-form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 44px;
+}
+
+.contacts-input {
+    display: block;
+    width: calc(50% - 15px);
+    padding: 0 0 8px 0;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.3636;
+    letter-spacing: 0.1em;
+    color: var(--c-white);
+    /* text-transform: uppercase; */
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+}
+
+.contacts-input::placeholder {
+    color: rgba(157, 164, 189, 0.4);
+    text-transform: uppercase;
+}
+
+.contacts-input:hover,
+.contacts-input:focus {
+    border-bottom: 1px solid var(--c-white);
+}
+
+.contacts-input:hover::placeholder,
+.contacts-input:focus::placeholder {
+    color: var(--c-white);
+}
+
+textarea.contacts-input {
+    margin-bottom: 44px;
+    width: 100%;
+    resize: none;
+}
+
+.contacts-form .btn {
+    color: var(--c-white);
+}
+
+/*  */
+.contacts-items {
+    flex: 0 0 50%;
+    padding: 130px 0 120px 100px;
+}
+
+.contacts-address {
+    margin-bottom: 70px;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.6666;
+    letter-spacing: 0.02em;
+    color: var(--с-lblue);
+}
+
+.contacts-list {
+    list-style: none;
+}
+
+.contacts-list-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.contacts-list-link {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.contacts-items .uptitle {
+    color: var(--c-white);
+}
+
+.contacts-desc {
+    font-size: 18px;
+    line-height: 1.6666;
+    letter-spacing: 0.02em;
+    color: var(--с-lblue);
+}

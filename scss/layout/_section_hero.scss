@@ -1,0 +1,108 @@
+/* hero */
+.hero-block {
+    position: relative;
+    display: flex;
+}
+
+.hero-socials {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 40px 40px 58px 0;
+    background: var(--c-white);
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transform: rotate(180deg);
+    writing-mode: vertical-rl;
+}
+
+.hero-socials::before {
+    content: "";
+    width: 1px;
+    height: 60px;
+    background: var(--bg-dark);
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* .hero-uptitle {
+  color: rgba(157, 164, 189, 0.6);
+} */
+.hero-content {
+    width: calc(100% - 114px);
+    padding: 272px 20px 40px 100px;
+    margin-left: auto;
+    background-image: url(../images/slider.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-repeat: repeat-x; */
+    /* background-repeat: repeat-y; */
+    /* background-position: 5% 5%; */
+}
+
+.hero-title {
+    margin: 20px 0;
+    font-family: var(--fmRl);
+    font-size: 72px;
+    line-height: 1.18;
+    color: #ffffff;
+    letter-spacing: 0.05em;
+}
+
+.hero-desc {
+    font-size: 18px;
+    line-height: 1.6666;
+    letter-spacing: 0.02em;
+    color: var(--с-lblue);
+}
+
+/* .header-contact::before{
+  content: url(../images/envelope.svg);
+}
+.header-contact::after{
+  content: url(../images/envelope.svg);
+} */
+.hero-btn {
+    position: relative;
+    min-width: 60px;
+    /* padding: 0 0 8px; */
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.3636;
+    letter-spacing: 0.1em;
+    color: rgba(157, 164, 189, 0.6);
+    background: transparent;
+    border: none;
+    /* border-bottom: 1px solid rgba(157, 164, 189, 0.6); */
+}
+
+.hero-btn:after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 1px;
+    margin-top: 8px;
+    background: rgba(157, 164, 189, 0.6);
+}
+
+.hero-content__btns {
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+    margin-top: 144px;
+}
+
+.hero-btn-prev {
+    text-align: left;
+}
+
+.hero-btn-next {
+    text-align: right;
+}
+
+.hero-btn:hover,
+.hero-btn:focus,
+.hero-btn.active {
+    color: var(--c-white);
+}

@@ -5,22 +5,59 @@
   left: 0;
   top: 0;
   z-index: 100;
+
   // @include flexed(center, center);
+  &-block {
+    display: flex;
+    align-items: center;
+  }
 
   &-logo {
+    display: block;
     margin-right: 131px;
   }
-  
 
-  &__link{
-    &.current{
+
+  &__link {
+    display: block;
+    padding: 52px 0;
+
+    &.current {
       color: blue;
     }
   }
 
+  &-contact {
+    text-transform: uppercase;
+  }
 
-  &-btn{
+  &-btns {
+    margin-left: auto;
+    padding-right: 20px;
+  }
+
+  &-btn {
     color: var(--c-white);
+    margin-left: 40px;
+    color: var(--c-white);
+    transition: background-color var(--anim-func);
+  }
+
+  .navigation-list {
+    display: flex;
+  }
+
+  .navigation-item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  @keyframes opacityAnim {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(180deg);
+    }
   }
 }
-
